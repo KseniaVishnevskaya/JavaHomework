@@ -1,0 +1,13 @@
+public class AbbreviateTwoWords {
+
+  public static String abbrevName(String name) {
+    String initials = "";
+    for (String word: name.split(" ")){
+     initials += Character.toUpperCase(word.charAt(0));
+      if (initials.length() < 3){
+        initials +=".";
+      }
+    }
+    return initials;
+  }
+}
